@@ -28,7 +28,9 @@ function verifyJWT(req, res, next) {
     // console.log('inside JWT', authHeader)
 
 }
-
+app.get('/hero', (req, res) => {
+    res.send('heroku running')
+})
 app.get('/', (req, res) => {
     res.send('Running genius car server')
 })
